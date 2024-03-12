@@ -17,11 +17,11 @@ export const ProjectCard = () => {
 
   return (
     <>
-    <Box marginLeft={7}>
+    <Box marginLeft={7} marginY='50px'>
       <Heading fontSize='xxx-large'>
         My Projects
       </Heading>
-      <Box w='160px' h={2} bg='green.600' marginY={2}></Box>
+      <Box w='160px' h={2} bg='red.600' marginY={2}></Box>
     </Box>
     <HStack padding={3} flexWrap='wrap'>
       { cardList.map((card, index) => 
@@ -40,10 +40,10 @@ export const ProjectCard = () => {
             <Divider />
             <CardFooter>
               <ButtonGroup>
-                <Button bg='green.600'>
+                <Button bg='red.600'>
                   { card.viewProject }
                 </Button>
-                <Button bg='green.600'>
+                <Button bg='red.600'>
                   { card.githubLink }
                 </Button>
               </ButtonGroup>

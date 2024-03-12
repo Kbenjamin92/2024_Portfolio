@@ -1,7 +1,8 @@
-import { Grid, GridItem, Show } from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react'
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { ProjectCard } from './components/ProjectCard'
+import { Header } from './components/Header'
 
 function App() {
   
@@ -10,11 +11,16 @@ function App() {
     <Grid 
       templateAreas={{
         base: `"nav nav"
+                header header
                 "main main"
-                "footer footer"`,
-        lg: ` " nav    nav    nav    nav"
-              "aside   main   main   main"
-              "aside  footer footer footer"`
+                "aside aside"`,
+        md: ` "nav    nav    nav  "
+              "header header header "
+              "main   main   main"
+              "aside aside  aside"`,
+        lg: ` "nav    nav    nav    nav"
+              "header header header header"
+              "aside   main   main   main"`
             }}
       templateColumns={{
         base: `1fr 1fr`,
@@ -22,21 +28,18 @@ function App() {
       }}
       bg='blackAlpha.400'
      >
-      <GridItem padding={3} bg='white.300' area={'nav'}>
+      <GridItem padding={3} bg='gray.800' area={'nav'}>
         <Navbar />
       </GridItem>
-      <Show above='lg'>
-        <GridItem bg='orange.300' area={'aside'}>
-          Aside
-        </GridItem>
-      </Show>
+      <GridItem area={'header'}>
+        <Header />
+      </GridItem>
       <GridItem padding={2} bg='black.300' area={'main'}>
         <ProjectCard />
       </GridItem>
-      <GridItem pl='2' bg='green.300' area={'footer'}>
-        Footer
-      </GridItem>
-
+        <GridItem bg='orange.300' area={'aside'}>
+          Aside
+        </GridItem>
     </Grid>
     </>
   )
