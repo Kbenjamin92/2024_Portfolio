@@ -16,6 +16,9 @@ export const ProjectCard = () => {
 
   return (
     <>
+    <Heading fontSize='xxx-large'>
+      Projects
+    </Heading>
     <HStack padding={2} flexWrap='wrap'>
       { cardList.map((card, index) => 
           <Card maxW='sm' key={index}>
@@ -33,10 +36,10 @@ export const ProjectCard = () => {
             <Divider />
             <CardFooter>
               <ButtonGroup>
-                <Button>
+                <Button bg='blue.500'>
                   { card.viewProject }
                 </Button>
-                <Button>
+                <Button bg='blue.500'>
                   { card.githubLink }
                 </Button>
               </ButtonGroup>

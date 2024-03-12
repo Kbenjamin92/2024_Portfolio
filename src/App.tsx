@@ -5,7 +5,6 @@ import { ProjectCard } from './components/ProjectCard'
 
 function App() {
   
-
   return (
     <>
     <Grid 
@@ -19,10 +18,10 @@ function App() {
             }}
       templateColumns={{
         base: `1fr 1fr`,
-        lg: `2fr 1fr 1fr 1fr`
+        lg: `200px 1fr 1fr 1fr`
       }}
      >
-      <GridItem padding={3} bg='black.300' area={'nav'}>
+      <GridItem padding={3} bg='white.300' area={'nav'}>
         <Navbar />
       </GridItem>
       <Show above='lg'>
