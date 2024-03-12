@@ -1,6 +1,7 @@
 import { Grid, GridItem, Show } from '@chakra-ui/react'
 import './App.css'
 import { Navbar } from './components/Navbar'
+import { ProjectCard } from './components/ProjectCard'
 
 function App() {
   
@@ -18,18 +19,19 @@ function App() {
             }}
       templateColumns={{
         base: `1fr 1fr`,
-        lg: `1fr 1fr 1fr 1fr`
+        lg: `250px 1fr 1fr 1fr`
       }}
      >
       <GridItem padding={3} bg='black.300' area={'nav'}>
         <Navbar />
       </GridItem>
       <Show above='lg'>
-        <GridItem  pl='2'bg='orange.300' area={'aside'}>
+        <GridItem bg='orange.300' area={'aside'}>
           Aside
         </GridItem>
       </Show>
-      <GridItem pl='2' bg='pink' area={'main'}>
+      <GridItem padding={3} bg='black.300' area={'main'}>
+        <ProjectCard />
         Main
       </GridItem>
       <GridItem pl='2' bg='green.300' area={'footer'}>
