@@ -24,7 +24,7 @@ export const ProjectCard = () => {
           <Card maxW='sm' key={index}>
             <CardBody>
               <Stack>
-                <Image src={card.cardImage} />
+                <Image src={card.cardImage} w='18rem' h='18rem'/>
                 <Heading>
                   { card.projectName }
                 </Heading>
