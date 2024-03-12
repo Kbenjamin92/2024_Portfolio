@@ -7,6 +7,7 @@ import {
   Divider, 
   HStack, 
   Heading, 
+  Image, 
   Stack, 
   Text } from "@chakra-ui/react"
 import { cardList } from '../data';
@@ -15,11 +16,12 @@ export const ProjectCard = () => {
 
   return (
     <>
-    <HStack justifyContent='space-evenly' wrap='wrap'>
-      { cardList.map(card => 
-          <Card maxW='sm'>
+    <HStack padding={2} flexWrap='wrap'>
+      { cardList.map((card, index) => 
+          <Card maxW='sm' key={index}>
             <CardBody>
               <Stack>
+                <Image src={card.cardImage} />
                 <Heading>
                   { card.projectName }
                 </Heading>

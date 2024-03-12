@@ -1,5 +1,6 @@
 export const cardList = [{ 
     projectName: 'Game Hub', 
+    cardImage: 'src/assets/minh-pham-HI6gy-p-WBI-unsplash.jpg',
     techStack: 'react, typescript',
     descriptions: 'This project displays games from the game hub api. dummy text',
     viewProject: 'View Project', 
@@ -7,20 +8,23 @@ export const cardList = [{
 },
 { 
     projectName: 'Expense Tracker', 
+    cardImage: 'src/assets/minh-pham-HI6gy-p-WBI-unsplash.jpg',
     techStack: 'react, typescript',
     descriptions: 'This project displays games from the game hub api. dummy text',
     viewProject: 'View Project', 
     githubLink: 'View Code',
 },
 { 
-    projectName: 'Rock Paper Scissors', 
+    projectName: 'Rock Paper Scissors',
+    cardImage: 'src/assets/minh-pham-HI6gy-p-WBI-unsplash.jpg', 
     techStack: 'react, typescript',
     descriptions: 'This project displays games from the game hub api. dummy text',
     viewProject: 'View Project', 
     githubLink: 'View Code',
 },
 { 
-    projectName: 'Todo List', 
+    projectName: 'Calculator', 
+    cardImage: 'src/assets/minh-pham-HI6gy-p-WBI-unsplash.jpg',
     techStack: 'react, typescript',
     descriptions: 'This project displays games from the game hub api. dummy text',
     viewProject: 'View Project', 

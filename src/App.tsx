@@ -19,7 +19,7 @@ function App() {
             }}
       templateColumns={{
         base: `1fr 1fr`,
-        lg: `250px 1fr 1fr 1fr`
+        lg: `2fr 1fr 1fr 1fr`
       }}
      >
       <GridItem padding={3} bg='black.300' area={'nav'}>
@@ -30,9 +30,8 @@ function App() {
           Aside
         </GridItem>
       </Show>
-      <GridItem padding={3} bg='black.300' area={'main'}>
+      <GridItem padding={2} bg='black.300' area={'main'}>
         <ProjectCard />
-        Main
       </GridItem>
       <GridItem pl='2' bg='green.300' area={'footer'}>
         Footer
