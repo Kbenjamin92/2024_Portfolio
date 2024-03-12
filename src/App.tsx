@@ -18,8 +18,9 @@ function App() {
             }}
       templateColumns={{
         base: `1fr 1fr`,
-        lg: `200px 1fr 1fr 1fr`
+        lg: `400px 1fr 1fr 1fr`
       }}
+      bg='blackAlpha.400'
      >
       <GridItem padding={3} bg='white.300' area={'nav'}>
         <Navbar />

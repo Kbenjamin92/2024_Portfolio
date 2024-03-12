@@ -1,4 +1,5 @@
 import { 
+  Box,
   Button, 
   ButtonGroup, 
   Card, 
@@ -16,15 +17,18 @@ export const ProjectCard = () => {
 
   return (
     <>
-    <Heading fontSize='xxx-large'>
-      Projects
-    </Heading>
-    <HStack padding={2} flexWrap='wrap'>
+    <Box marginLeft={7}>
+      <Heading fontSize='xxx-large'>
+        My Projects
+      </Heading>
+      <Box w='160px' h={2} bg='green.600' marginY={2}></Box>
+    </Box>
+    <HStack padding={3} flexWrap='wrap'>
       { cardList.map((card, index) => 
-          <Card maxW='sm' key={index}>
+          <Card maxW='sm' bg='gray.800' margin={3} boxShadow='dark-lg' key={index}>
             <CardBody>
               <Stack>
-                <Image src={card.cardImage} w='18rem' h='18rem'/>
+                <Image src={card.cardImage} borderRadius={5}/>
                 <Heading>
                   { card.projectName }
                 </Heading>
@@ -36,10 +40,10 @@ export const ProjectCard = () => {
             <Divider />
             <CardFooter>
               <ButtonGroup>
-                <Button bg='blue.500'>
+                <Button bg='green.600'>
                   { card.viewProject }
                 </Button>
-                <Button bg='blue.500'>
+                <Button bg='green.600'>
                   { card.githubLink }
                 </Button>
               </ButtonGroup>
