@@ -3,10 +3,12 @@ import {
   Button, 
   HStack, 
   Heading, 
+  Icon, 
   Link, 
   Show, 
   Text } from "@chakra-ui/react"
 import resume from '../assets/KippB_2024_Resume.pdf';
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Navbar = () => {
   return (
@@ -21,7 +23,7 @@ export const Navbar = () => {
             md: '30px',
             lg: '33px'
         }}>
-         Kipp Benjamin Jr Portfolio
+         Kipp Benjamin's Portfolio
         </Text>
         <Box w='14rem' h={2} bg='red.600' marginY={2}></Box>
       </Heading>
@@ -33,6 +35,11 @@ export const Navbar = () => {
             </Text>
          </Button>
         </Link>
+      </Show>
+      <Show below='md'>
+        <Button>
+          <Icon as={RxHamburgerMenu} boxSize={6}/>
+        </Button>
       </Show>
     </HStack>
     </>

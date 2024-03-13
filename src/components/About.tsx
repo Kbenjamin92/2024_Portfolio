@@ -8,7 +8,10 @@ export const About = () => {
             About Me
         </Heading>
         <Box w='14rem' h={2} bg='red.600' marginY={2}></Box>
-        <Text fontSize='18px'>
+        <Text fontSize={{
+                base: '16px',
+                lg: '18px'
+                        }}>
             Experienced full stack engineer adept at crafting seamless, 
             user-centric applications. Proficient in a variety of technologies, 
             with a passion for creating innovative solutions that drive impactful 
