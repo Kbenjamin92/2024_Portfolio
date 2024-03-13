@@ -13,12 +13,12 @@ function App() {
       templateAreas={{
         base: `"nav nav"
                 "header header"
-                "main main"
-                "aside aside"`,
+                "aside aside"
+                "main main"`,
         md: ` "nav    nav    nav  "
               "header header header "
-              "main   main   main"
-              "aside aside  aside"`,
+              "aside aside  aside"
+              "main   main   main"`,
         lg: ` "nav    nav    nav    nav"
               "header header header header"
               "aside   main   main   main"`
@@ -35,12 +35,12 @@ function App() {
       <GridItem area={'header'}>
         <Header />
       </GridItem>
+      <GridItem bg='gray.700' area={'aside'}>
+        <About />
+      </GridItem>
       <GridItem padding={2} bg='black.300' area={'main'}>
         <ProjectCard />
       </GridItem>
-        <GridItem bg='gray.700' area={'aside'}>
-          <About />
-        </GridItem>
     </Grid>
     </>
   )
