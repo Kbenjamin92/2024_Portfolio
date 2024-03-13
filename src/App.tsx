@@ -3,6 +3,7 @@ import './App.css'
 import { Navbar } from './components/Navbar'
 import { ProjectCard } from './components/ProjectCard'
 import { Header } from './components/Header'
+import { About } from './components/About'
 
 function App() {
   
@@ -37,8 +38,8 @@ function App() {
       <GridItem padding={2} bg='black.300' area={'main'}>
         <ProjectCard />
       </GridItem>
-        <GridItem bg='orange.300' area={'aside'}>
-          Aside
+        <GridItem bg='gray.700' area={'aside'}>
+          <About />
         </GridItem>
     </Grid>
     </>

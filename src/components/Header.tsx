@@ -11,7 +11,7 @@ import headshot from '../assets/HeadShot.jpeg'
 export const Header = () => {
   return (
     <>
-    <Grid bg='gray.800'>
+    <Grid bg='gray.800' paddingBottom={5}>
         <HStack>
             <GridItem padding='35px'>
                 <Avatar 
