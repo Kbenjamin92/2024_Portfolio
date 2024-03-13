@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Divider, Heading, Text } from '@chakra-ui/react'
 
 export const About = () => {
   return (
@@ -12,12 +12,13 @@ export const About = () => {
                 base: '16px',
                 lg: '18px'
                         }}>
-            Experienced full stack engineer adept at crafting seamless, 
+            Experienced full stack software engineer adept at crafting seamless, 
             user-centric applications. Proficient in a variety of technologies, 
             with a passion for creating innovative solutions that drive impactful 
             user experiences. My passion has been marked by a commitment to innovation, 
             problem-solving, and continuous learning. 
         </Text>
+        <Divider paddingTop='30px'/>
     </Box>
     </>
   )

@@ -28,31 +28,52 @@ export const Skills = () => {
             marginY={2}></Box>
         <HStack flexWrap='wrap'>
             <Box>
-                <Image src={htmlLogo} boxSize='70px' />
+                <Image src={htmlLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>HTML5</Text>
             </Box>
             <Box>
-                <Image src={cssLogo}boxSize='70px' />
+                <Image src={cssLogo}boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>CSS3</Text>
             </Box>
             <Box>
-                <Image src={jsLogo} boxSize='70px' />
+                <Image src={jsLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>JavaScript</Text>
             </Box>
             <Box>
-                <Image src={tsLogo} boxSize='70px' />
+                <Image src={tsLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>TypeScript</Text>
             </Box>
             <Box>
-                <Image src={reactLogo} boxSize='70px' />
+                <Image src={reactLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>React</Text>
             </Box>
             <Box>
-                <Image src={nextJSLogo} boxSize='70px'/>
+                <Image src={nextJSLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }}/>
                 <Text textAlign='center'>NextJS</Text>
             </Box>
             <Box>
-                <Image src={angularLogo} boxSize='70px' />
+                <Image src={angularLogo} boxSize={{
+                    base: '50px',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>Angular</Text>
             </Box>
             <Box>
@@ -61,31 +82,52 @@ export const Skills = () => {
                     bg='#fff' 
                     borderRadius={5} 
                     padding='3px' 
-                    boxSize='60px' />
+                    boxSize={{
+                        base: '50px',
+                        lg: '60px'
+                    }} />
                 <Text textAlign='center' paddingTop={2}>Node.js</Text>
             </Box>
             <Box>
-                <Image src={reduxLogo} boxSize='70px' />
+                <Image src={reduxLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>Redux</Text>
             </Box>
             <Box>
-                <Image src={npmLogo} boxSize='70px' />
+                <Image src={npmLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>npm</Text>
             </Box>
             <Box>
-                <Image src={gitLogo} boxSize='70px' />
+                <Image src={gitLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>Git</Text>
             </Box>
             <Box>
-                <Image src={githubLogo} boxSize='70px' />
+                <Image src={githubLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>GitHub</Text>
             </Box>
             <Box>
-                <Image src={bootstrapLogo} boxSize='70px' />
+                <Image src={bootstrapLogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>BootStrap</Text>
             </Box>
             <Box>
-                <Image src={materialUILogo} boxSize='70px' />
+                <Image src={materialUILogo} boxSize={{
+                    base: '',
+                    lg: '70px'
+                }} />
                 <Text textAlign='center'>Material UI</Text>
             </Box>
         </HStack>
