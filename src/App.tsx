@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar'
 import { ProjectCard } from './components/ProjectCard'
 import { Header } from './components/Header'
 import { About } from './components/About'
+import { Skills } from './components/Skills'
 
 function App() {
   
@@ -37,6 +38,7 @@ function App() {
       </GridItem>
       <GridItem bg='gray.700' area={'aside'}>
         <About />
+        <Skills />
       </GridItem>
       <GridItem padding={2} bg='black.300' area={'main'}>
         <ProjectCard />
