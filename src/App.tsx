@@ -11,7 +11,7 @@ function App() {
     <Grid 
       templateAreas={{
         base: `"nav nav"
-                header header
+                "header header"
                 "main main"
                 "aside aside"`,
         md: ` "nav    nav    nav  "

@@ -17,9 +17,17 @@ export const ProjectCard = () => {
 
   return (
     <>
-    <Box marginLeft={7} marginY='50px'>
-      <Heading fontSize='xxx-large'>
-        My Projects
+    <Box marginLeft={7} marginY='20px'>
+      <Heading>
+        <Text 
+        fontSize={{
+            base: '30px',
+            sm: '40px',
+            md: '50px',
+            lg: '50px'
+          }}>
+          My Projects
+        </Text>
       </Heading>
       <Box w='160px' h={2} bg='red.600' marginY={2}></Box>
     </Box>

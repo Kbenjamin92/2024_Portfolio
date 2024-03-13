@@ -13,7 +13,7 @@ export const Header = () => {
     <>
     <Grid bg='gray.800'>
         <HStack>
-            <GridItem padding='90px'>
+            <GridItem padding='35px'>
                 <Avatar 
                     boxShadow='dark-lg' 
                     size={{
@@ -24,17 +24,32 @@ export const Header = () => {
                     name='Kipp Benjamin Jr' 
                     src={headshot}/>
             </GridItem>
-            <GridItem padding='10px'>
+            <GridItem padding='0px'>
                 <Heading>
                     <Text 
                         color='whiteAlpha.900' 
                         fontSize={{
+                            base: '30px',
+                            sm: '40px',
                             md: '60px',
                             lg: '100px'
-                        }}>
-                        Front-End Engineer
+                        }}
+                        >
+                        Full-Stack Software Engineer
                     </Text>
-                    <Box w='32rem' h={4} bg='red.600' marginY={2}></Box>
+                    <Box 
+                        w={{
+                            base: 100,
+                            md: 300,
+                            lg: 500
+                        }} 
+                        h={{
+                            base:2,
+                            md: 3,
+                            lg: 4
+                        }} 
+                        bg='red.600' 
+                        marginY={2}></Box>
                 </Heading>
             </GridItem>
         </HStack>
