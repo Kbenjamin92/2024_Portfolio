@@ -28,7 +28,8 @@ export const ProjectCard = () => {
             sm: '40px',
             md: '50px',
             lg: '50px'
-          }}>
+          }}
+          color='#fff'>
           My Projects
         </Text>
       </Heading>
@@ -40,11 +41,11 @@ export const ProjectCard = () => {
             <CardBody>
               <Stack>
                 <Image src={card.cardImage} borderRadius={5}/>
-                <Heading>
+                <Heading color='#fff'>
                   { card.projectName }
                 </Heading>
                 <Divider />
-                <Text>
+                <Text color='#fff'>
                   { card.descriptions }
                 </Text>
               </Stack>
@@ -53,13 +54,13 @@ export const ProjectCard = () => {
             <CardFooter marginBottom={4}>
               <ButtonGroup>
                 <Link href={card.projectLink} target='_blank'>
-                  <Button bg='red.600'>
+                  <Button bg='red.600' color='#fff'>
                     { card.viewProject }
                     <Icon paddingLeft={2} as={BsArrowRight} boxSize={6} />
                   </Button>
                 </Link>
                 <Link href={card.gitHubLink} target='_blank'>
-                  <Button bg='red.600'>
+                  <Button bg='red.600' color='#fff'>
                     { card.viewGithub }
                     <Icon paddingLeft={2} as={BsArrowRight} boxSize={6} />
                   </Button>

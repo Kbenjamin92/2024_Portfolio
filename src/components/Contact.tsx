@@ -26,26 +26,26 @@ export const Contact = () => {
         <HStack flexWrap='wrap' paddingTop={5}>
             <Box>
                 <Link href={linkdedInLink} target="_blank">
-                    <Icon as={BsLinkedin} boxSize='40px'/>
-                    <Text>LinkedIn</Text>
+                    <Icon as={BsLinkedin} boxSize='40px' color='#fff'/>
+                    <Text color='#fff'>LinkedIn</Text>
                 </Link>
             </Box>
             <Box>
                 <Link href={gitHubLink} target="_blank">
-                    <Icon as={BsGithub} boxSize='40px'/>
-                    <Text>GitHub</Text>
+                    <Icon as={BsGithub} boxSize='40px' color='#fff'/>
+                    <Text color='#fff'>GitHub</Text>
                 </Link>
             </Box>
             <Box>
                 <Link href={youTubeLink} target="_blank">
-                    <Icon as={BsYoutube} boxSize='40px'/>
-                    <Text>YouTube</Text>
+                    <Icon as={BsYoutube} boxSize='40px' color='#fff'/>
+                    <Text color='#fff'>YouTube</Text>
                 </Link>
             </Box>
             <Box>
                 <Link href={emailLink} target="_blank">
-                    <Icon as={MdEmail} boxSize='40px'/>
-                    <Text>Email</Text>
+                    <Icon as={MdEmail} boxSize='40px' color='#fff'/>
+                    <Text color='#fff'>Email</Text>
                 </Link>
             </Box>
         </HStack>
