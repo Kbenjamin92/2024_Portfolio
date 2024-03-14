@@ -5,8 +5,10 @@ import {
     GridItem, 
     HStack, 
     Heading, 
+    Icon, 
     Text } from "@chakra-ui/react"
 import headshot from '../assets/HeadShot.jpeg'
+import { PiHandWavingBold } from "react-icons/pi";
 
 export const Header = () => {
   return (
@@ -32,10 +34,12 @@ export const Header = () => {
                             base: '30px',
                             sm: '40px',
                             md: '60px',
-                            lg: '100px'
+                            lg: '90px'
                         }}
                         >
-                        Full-Stack Software Engineer
+                        Hi! <Icon className='hand-wave' paddingLeft={2} as={PiHandWavingBold} /> <br/>
+                        I'm a
+                        Full Stack Software Engineer
                     </Text>
                     <Box 
                         w={{

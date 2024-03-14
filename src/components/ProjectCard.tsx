@@ -8,10 +8,13 @@ import {
   Divider, 
   HStack, 
   Heading, 
+  Icon, 
   Image, 
+  Link, 
   Stack, 
   Text } from "@chakra-ui/react"
 import { cardList } from '../data';
+import { BsArrowRight } from "react-icons/bs";
 
 export const ProjectCard = () => {
 
@@ -40,20 +43,27 @@ export const ProjectCard = () => {
                 <Heading>
                   { card.projectName }
                 </Heading>
+                <Divider />
                 <Text>
                   { card.descriptions }
                 </Text>
               </Stack>
+              <Divider marginTop={7}/>
             </CardBody>
-            <Divider />
-            <CardFooter>
+            <CardFooter marginBottom={4}>
               <ButtonGroup>
-                <Button bg='red.600'>
-                  { card.viewProject }
-                </Button>
-                <Button bg='red.600'>
-                  { card.githubLink }
-                </Button>
+                <Link href={card.projectLink} target='_blank'>
+                  <Button bg='red.600'>
+                    { card.viewProject }
+                    <Icon paddingLeft={2} as={BsArrowRight} boxSize={6} />
+                  </Button>
+                </Link>
+                <Link href={card.gitHubLink} target='_blank'>
+                  <Button bg='red.600'>
+                    { card.viewGithub }
+                    <Icon paddingLeft={2} as={BsArrowRight} boxSize={6} />
+                  </Button>
+                </Link>
               </ButtonGroup>
             </CardFooter>
           </Card>
