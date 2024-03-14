@@ -40,7 +40,7 @@ export const Navbar = () => {
       <Show above='md'>
         <Link href={resume} download>
          <Button bg='red.500'>
-          <Icon as={BsDownload} paddingRight={2} boxSize={6} />
+          <Icon as={BsDownload} paddingRight={2} boxSize={6} color='#fff'/>
             <Text color='#fff'>
               Download Resume
             </Text>

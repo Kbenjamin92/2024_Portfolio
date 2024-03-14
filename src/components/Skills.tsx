@@ -18,7 +18,7 @@ export const Skills = () => {
   return (
     <>
     <Box padding={5} marginTop={4}>
-        <Heading>
+        <Heading color='#fff'>
             My Skills
         </Heading>
         <Box 
@@ -33,49 +33,49 @@ export const Skills = () => {
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>HTML5</Text>
+                <Text textAlign='center' color='#fff'>HTML5</Text>
             </Box>
             <Box>
                 <Image src={cssLogo}boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>CSS3</Text>
+                <Text textAlign='center' color='#fff'>CSS3</Text>
             </Box>
             <Box>
                 <Image src={jsLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>JavaScript</Text>
+                <Text textAlign='center' color='#fff'>JavaScript</Text>
             </Box>
             <Box>
                 <Image src={tsLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>TypeScript</Text>
+                <Text textAlign='center' color='#fff'>TypeScript</Text>
             </Box>
             <Box>
                 <Image src={reactLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>React</Text>
+                <Text textAlign='center' color='#fff'>React</Text>
             </Box>
             <Box>
                 <Image src={nextJSLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }}/>
-                <Text textAlign='center'>NextJS</Text>
+                <Text textAlign='center' color='#fff'>NextJS</Text>
             </Box>
             <Box>
                 <Image src={angularLogo} boxSize={{
                     base: '50px',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>Angular</Text>
+                <Text textAlign='center' color='#fff'>Angular</Text>
             </Box>
             <Box>
                 <Image 
@@ -87,7 +87,7 @@ export const Skills = () => {
                         base: '50px',
                         lg: '60px'
                     }} />
-                <Text textAlign='center' paddingTop={2}>Node.js</Text>
+                <Text textAlign='center' paddingTop={2} color='#fff'>Node.js</Text>
             </Box>
             <Box>
                 <Image src={reduxLogo} boxSize={{
@@ -101,35 +101,35 @@ export const Skills = () => {
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>npm</Text>
+                <Text textAlign='center' color='#fff'>npm</Text>
             </Box>
             <Box>
                 <Image src={gitLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>Git</Text>
+                <Text textAlign='center' color='#fff'>Git</Text>
             </Box>
             <Box>
                 <Image src={githubLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>GitHub</Text>
+                <Text textAlign='center' color='#fff'>GitHub</Text>
             </Box>
             <Box>
                 <Image src={bootstrapLogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>BootStrap</Text>
+                <Text textAlign='center' color='#fff'>BootStrap</Text>
             </Box>
             <Box>
                 <Image src={materialUILogo} boxSize={{
                     base: '',
                     lg: '70px'
                 }} />
-                <Text textAlign='center'>Material UI</Text>
+                <Text textAlign='center' color='#fff'>Material UI</Text>
             </Box>
         </HStack>
         <Show above='md'>
