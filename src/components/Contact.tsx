@@ -19,7 +19,7 @@ export const Contact = () => {
   return (
     <>
     <Box padding={5} marginTop={8}>
-        <Heading>
+        <Heading color='#fff'>
             Follow Me
         </Heading>
         <Box w='14rem' h={2} bg='red.600' marginY={2}></Box>
