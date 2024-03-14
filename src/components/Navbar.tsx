@@ -5,6 +5,12 @@ import {
   Heading, 
   Icon, 
   Link, 
+  Popover, 
+  PopoverBody, 
+  PopoverCloseButton, 
+  PopoverContent, 
+  PopoverTrigger, 
+  Portal, 
   Show, 
   Text } from "@chakra-ui/react"
 import resume from '../assets/KippB_2024_Resume.pdf';
@@ -14,7 +20,10 @@ import { BsDownload } from "react-icons/bs";
 export const Navbar = () => {
   return (
     <>
-    <HStack justifyContent='space-around'>
+    <HStack justifyContent={{
+        base: 'space-between',
+        lg: 'space-around'
+    }}>
       <Heading>
         <Text 
           color='whiteAlpha.900'
@@ -39,9 +48,28 @@ export const Navbar = () => {
         </Link>
       </Show>
       <Show below='md'>
-        <Button>
-          <Icon as={RxHamburgerMenu} boxSize={6}/>
-        </Button>
+        <Popover>
+          <PopoverTrigger>
+            <Button>
+              <Icon as={RxHamburgerMenu} boxSize={6}/>
+            </Button>
+          </PopoverTrigger>
+          <Portal>
+            <PopoverContent>
+              <PopoverCloseButton />
+              <PopoverBody>
+                <Link href={resume} download>
+                  <Button bg='red.500'>
+                    <Icon as={BsDownload} paddingRight={2} boxSize={6} />
+                      <Text>
+                        Download Resume
+                      </Text>
+                  </Button>
+                </Link>
+              </PopoverBody>
+            </PopoverContent>
+          </Portal>
+        </Popover>
       </Show>
     </HStack>
     </>

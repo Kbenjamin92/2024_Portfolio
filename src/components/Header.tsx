@@ -31,7 +31,7 @@ export const Header = () => {
                     <Text 
                         color='whiteAlpha.900' 
                         fontSize={{
-                            base: '30px',
+                            base: '29px',
                             sm: '40px',
                             md: '60px',
                             lg: '90px'
