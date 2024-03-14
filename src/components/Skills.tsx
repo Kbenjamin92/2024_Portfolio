@@ -1,4 +1,4 @@
-import { Box, HStack, Heading, Image, Text } from "@chakra-ui/react"
+import { Box, Divider, HStack, Heading, Image, Show, Text } from "@chakra-ui/react"
 import htmlLogo from '../assets/icons/html-logo.svg'
 import cssLogo from '../assets/icons/css-logo.svg'
 import jsLogo from '../assets/icons/js-logo.svg'
@@ -17,7 +17,7 @@ import nextJSLogo from '../assets/icons/nextjs-logo.svg'
 export const Skills = () => {
   return (
     <>
-    <Box padding={5}>
+    <Box padding={5} marginTop={4}>
         <Heading>
             My Skills
         </Heading>
@@ -25,7 +25,8 @@ export const Skills = () => {
             w='14rem' 
             h={2} 
             bg='red.600' 
-            marginY={2}></Box>
+            marginY={2}
+            marginBottom={5}></Box>
         <HStack flexWrap='wrap'>
             <Box>
                 <Image src={htmlLogo} boxSize={{
@@ -131,6 +132,9 @@ export const Skills = () => {
                 <Text textAlign='center'>Material UI</Text>
             </Box>
         </HStack>
+        <Show above='md'>
+            <Divider marginTop={10}/>
+        </Show>
     </Box>
     </>
   )

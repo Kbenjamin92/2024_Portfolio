@@ -1,13 +1,22 @@
-import { Box, Divider, Heading, Text } from '@chakra-ui/react'
+import { 
+  Box, 
+  Divider, 
+  Heading, 
+  Text } from '@chakra-ui/react'
 
 export const About = () => {
   return (
     <>
-    <Box padding={5}>
+    <Box padding={5} marginTop={6}>
         <Heading>
             About Me
         </Heading>
-        <Box w='14rem' h={2} bg='red.600' marginY={2}></Box>
+        <Box 
+          w='14rem' 
+          h={2} 
+          bg='red.600' 
+          marginY={2}
+          marginBottom={5}></Box>
         <Text fontSize={{
                 base: '16px',
                 lg: '18px'
@@ -18,7 +27,7 @@ export const About = () => {
             user experiences. My passion has been marked by a commitment to innovation, 
             problem-solving, and continuous learning. 
         </Text>
-        <Divider paddingTop='30px'/>
+        <Divider marginTop={10}/>
     </Box>
     </>
   )

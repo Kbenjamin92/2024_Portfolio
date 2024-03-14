@@ -9,7 +9,7 @@ import {
   Text } from "@chakra-ui/react"
 import resume from '../assets/KippB_2024_Resume.pdf';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { GrDocumentDownload } from "react-icons/gr";
+import { BsDownload } from "react-icons/bs";
 
 export const Navbar = () => {
   return (
@@ -31,7 +31,7 @@ export const Navbar = () => {
       <Show above='md'>
         <Link href={resume} download>
          <Button bg='red.500'>
-          <Icon as={GrDocumentDownload} paddingRight={2} boxSize={6} />
+          <Icon as={BsDownload} paddingRight={2} boxSize={6} />
             <Text>
               Download Resume
             </Text>
