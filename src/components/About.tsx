@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <>
     <Box padding={5} marginTop={6}>
-        <Heading color='blackAlpha.50'>
+        <Heading color='whiteAlpha.400'>
             About Me
         </Heading>
         <Box 
@@ -21,7 +21,7 @@ export const About = () => {
                 base: '16px',
                 lg: '18px'
                         }}
-              color='blackAlpha.50'>
+              color='whiteAlpha.400'>
             Experienced full stack software engineer adept at crafting seamless, 
             user-centric applications. Proficient in a variety of technologies, 
             with a passion for creating innovative solutions that drive impactful 

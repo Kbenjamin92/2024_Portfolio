@@ -45,7 +45,7 @@ function App() {
           <Contact />
         </Show>
       </GridItem>
-      <GridItem padding={2} bg='blackAlpha.800' area={'main'}>
+      <GridItem padding={2} bg='blackAlpha.400' area={'main'}>
         <ProjectCard />
       </GridItem>
       <Show below='md'>
