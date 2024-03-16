@@ -7,7 +7,7 @@ import {
     Heading, 
     Icon, 
     Text } from "@chakra-ui/react"
-import headshot from '../assets/HeadShot.jpeg'
+import headshot from '../assets/images/HeadShot.jpeg'
 import { PiHandWavingBold } from "react-icons/pi";
 
 export const Header = () => {
