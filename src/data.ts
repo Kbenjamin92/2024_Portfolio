@@ -1,6 +1,6 @@
 export const cardList = [{ 
     projectName: 'Game Hub', 
-    cardImage: 'src/assets/images/gameHubImage.png',
+    cardImage: 'gameHubImage.png',
     techStack: 'react, typescript',
     descriptions: 'Game Hub is a dynamic web application designed to provide users with a centralized platform for exploring and discovering video games. Built using React and TypeScript, Game Hub leverages the RAWG video game database API to fetch detailed information about games, including titles, genres, release dates, and ratings. The user interface is crafted with the Chakra UI library, offering a sleek and responsive design. ',
     projectLink: 'https://game-hub-discovery.netlify.app/',
@@ -10,7 +10,7 @@ export const cardList = [{
 },
 { 
     projectName: 'Expense Tracker', 
-    cardImage: 'src/assets/images/expenseTrackerImage.png',
+    cardImage: 'expenseTrackerImage.png',
     techStack: 'react, typescript',
     descriptions: 'Built with React, TypeScript, React Hook Forms, Zod for validation, and Bootstrap UI, this app offers a seamless user experience. With the Expense Tracker, users can easily add, calculate, and categorize their expenses. The app allows users to filter expenses based on different criteria, making it easier to track spending habits. Additionally, users can remove expenses from the list with a simple click.',
     projectLink: 'https://kipps-expense-tracker.netlify.app/',
@@ -20,7 +20,7 @@ export const cardList = [{
 },
 { 
     projectName: 'Rock Paper Scissors',
-    cardImage: 'src/assets/images/rockPaperScissorImage.png',
+    cardImage: 'rockPaperScissorImage.png',
     techStack: 'react, typescript',
     descriptions: 'The Rock Paper Scissors game is a fun and interactive way to play the classic hand game online. Built with HTML, CSS, and JavaScript, this game allows players to compete against the computer in a battle of wits and strategy. Players can choose between rock, paper, or scissors, and the computer will randomly select its choice.',
     projectLink: 'https://boring-pare-35a343.netlify.app/',
@@ -30,7 +30,7 @@ export const cardList = [{
 },
 { 
     projectName: 'Calculator', 
-    cardImage: 'src/assets/images/calculatorImage.png',
+    cardImage: 'calculatorImage.png',
     techStack: 'react, typescript',
     descriptions: 'The Calculator app is a simple yet powerful tool for performing basic arithmetic calculations. Built using HTML, CSS, and JavaScript, this app provides a user-friendly interface for quick and efficient calculations.',
     projectLink: 'https://kbjcalculator.netlify.app/',
