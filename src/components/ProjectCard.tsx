@@ -41,7 +41,7 @@ export const ProjectCard = () => {
           <Card maxW='sm' bg='gray.800' margin={3} boxShadow='dark-lg' key={index}>
             <CardBody>
               <Stack>
-                <Image src={getImageUrl(card.cardImage)} borderRadius={5}/>
+                <Image src={getImageUrl(card.cardImage)} w='100%' h='50%' borderRadius={5}/>
                 <Heading color='#fff'>
                   { card.projectName }
                 </Heading>
