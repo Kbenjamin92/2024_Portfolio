@@ -13,7 +13,7 @@ import {
   Portal, 
   Show, 
   Text } from "@chakra-ui/react"
-import resume from '../assets/KippB_2024_Resume.pdf';
+import resume from '../assets/Resume_2024_KB.pdf';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsDownload } from "react-icons/bs";
 
